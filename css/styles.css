@@ -1,0 +1,169 @@
+/* ===================================================================
+ * Clean, Elegant Portfolio Styles - Inspired by Shakiz / Kards Blueprint
+ * Clean Light Palette & High Contrast
+ * ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Palette */
+  --bg-main: #FFFFFF;
+  --bg-alt: #F8FAFC;
+  --text-dark: #0F172A;
+  --text-muted: #475569;
+  --border-light: #E2E8F0;
+  --accent-green: #059669;
+  --accent-green-dark: #047857;
+  --accent-green-bg: #ECFDF5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Code-Tag Accent inspired by shakiz.github.io */
+.code-tag {
+  color: var(--accent-green-dark);
+  font-weight: 800;
+  display: inline-block;
+}
+
+.code-tag::before {
+  content: '{ ';
+  color: #10B981;
+  font-weight: 600;
+}
+
+.code-tag::after {
+  content: ' }';
+  color: #10B981;
+  font-weight: 600;
+}
+
+/* Navigation */
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* Stat Cards */
+.stat-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.08);
+  border-color: #CBD5E1;
+}
+
+/* Timeline Architecture (Kards/Shakiz style) */
+.timeline-wrap {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline-wrap::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 10px;
+  width: 2px;
+  background: #E2E8F0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 4px;
+  left: -28px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--accent-green);
+  box-shadow: 0 0 0 4px #ECFDF5;
+}
+
+.timeline-dot.education {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 4px #EFF6FF;
+}
+
+/* Project Card */
+.project-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.1);
+  border-color: #94A3B8;
+}
+
+.project-card-image {
+  background: #F8FAFC;
+  border-bottom: 1px solid var(--border-light);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.project-card-image img {
+  max-height: 220px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Toast */
+#copy-toast {
+  transition: all 0.25s ease-in-out;
+}
