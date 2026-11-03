@@ -70,6 +70,15 @@ body {
   border-bottom: 1px solid var(--border-light);
 }
 
+#mobile-drawer {
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(100%);
+}
+
+#mobile-drawer:not(.hidden) {
+  transform: translateX(0);
+}
+
 /* Stat Cards */
 .stat-box {
   background: #FFFFFF;

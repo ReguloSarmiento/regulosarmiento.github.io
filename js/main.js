@@ -48,15 +48,27 @@ function initCopyActions() {
 function initMobileMenu() {
   const btn = document.getElementById('mobile-toggle');
   const menu = document.getElementById('mobile-drawer');
+  const closeBtn = document.getElementById('mobile-close');
+
   if (!btn || !menu) return;
 
+  const setMenuState = (isOpen) => {
+    menu.classList.toggle('hidden', !isOpen);
+    btn.setAttribute('aria-expanded', String(isOpen));
+  };
+
   btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    const isOpen = menu.classList.contains('hidden');
+    setMenuState(isOpen);
   });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => setMenuState(false));
+  }
 
   menu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      menu.classList.add('hidden');
+      setMenuState(false);
     });
   });
 }

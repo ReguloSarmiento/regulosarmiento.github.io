@@ -54,12 +54,32 @@
       </div>
 
       <!-- Mobile Menu Toggle -->
-      <button id="mobile-toggle" aria-label="Toggle navigation" class="md:hidden p-2 text-slate-700">
+      <button id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-drawer" class="md:hidden p-2 text-slate-700">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
       </button>
 
     </div>
   </header>
+
+  <aside id="mobile-drawer" class="fixed inset-y-0 right-0 z-40 hidden w-72 max-w-[85vw] border-l border-slate-200 bg-white shadow-2xl md:hidden" aria-label="Mobile navigation">
+    <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3">
+      <a href="#intro" class="flex items-center gap-2 font-extrabold text-sm text-slate-900">
+        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold font-mono">RS</span>
+        <span>Regulo Sarmiento</span>
+      </a>
+      <button id="mobile-close" aria-label="Close navigation" class="p-2 text-slate-600">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col p-4 space-y-2 text-sm font-medium">
+      <a href="#about" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">About Me</a>
+      <a href="#resume" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">Experience</a>
+      <a href="#portfolio" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">Portfolio</a>
+      <a href="#contact" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contact</a>
+      <a href="./assets/Regulo_Sarmiento_Resume.pdf" download="Regulo_Sarmiento_Senior_Android_Developer.pdf" target="_blank" class="mt-2 rounded-lg bg-slate-900 px-3 py-2.5 text-center text-white hover:bg-slate-800">Resume (PDF)</a>
+    </nav>
+  </aside>
 
 
   <!-- ============================================================== -->
