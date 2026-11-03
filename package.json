@@ -1,0 +1,19 @@
+{
+  "name": "regulo-sarmiento-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Regulo Sarmiento - Senior Android Developer",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000",
+    "open": "open index.html"
+  },
+  "keywords": [
+    "android",
+    "kotlin",
+    "jetpack-compose",
+    "sdk-architect",
+    "portfolio"
+  ],
+  "author": "Regulo Sarmiento <regulo.sarmiento@gmail.com>",
+  "license": "MIT"
+}

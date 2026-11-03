@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regulo Sarmiento | Senior Android Developer</title>
+  <meta name="description" content="Senior Android Developer with 8 years of experience engineering native Android applications, developer SDKs, and scalable mobile systems.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#059669',
+              dark: '#047857',
+              light: '#ECFDF5',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-white text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- ============================================================== -->
+  <!-- Top Navigation Bar                                             -->
+  <!-- ============================================================== -->
+  <header class="sticky top-0 z-50 navbar">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#intro" class="flex items-center gap-2 font-extrabold text-base tracking-tight text-slate-900">
+        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold font-mono">RS</span>
+        <span>Regulo Sarmiento</span>
+      </a>
+
+      <!-- Resume CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="./assets/Regulo_Sarmiento_Resume.pdf" download="Regulo_Sarmiento_Senior_Android_Developer.pdf" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold tracking-wide transition-all flex items-center gap-1.5 shadow-sm">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Resume (PDF)</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-toggle" aria-label="Toggle navigation" class="md:hidden p-2 text-slate-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================== -->
+  <!-- HERO SECTION (#intro) - Inspired by shakiz.github.io          -->
+  <!-- ============================================================== -->
+  <section id="intro" class="py-20 sm:py-28 border-b border-slate-100 bg-gradient-to-b from-slate-50/60 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
+      
+
+      <!-- Greeting & Title -->
+      <div class="space-y-2">
+        <p class="text-sm sm:text-base font-semibold text-slate-600">Hi, I'm Regulo Sarmiento</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight">
+          <span class="code-tag">Senior Android Developer</span>
+        </h1>
+      </div>
+
+      <!-- Concise Lead Paragraph -->
+      <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          With 8 years of experience designing and shipping native Android applications, SDKs, and developer facing libraries. Dedicated to continuously developing, implementing, and adopting new technologies.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <a href="#about" class="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold tracking-wide transition-all shadow-sm">
+          About Me
+        </a>
+        <a href="#resume" class="px-5 py-2.5 rounded-lg border border-slate-300 hover:border-slate-400 bg-white text-slate-800 text-xs font-semibold tracking-wide transition-all">
+          Experience
+        </a>
+        <a href="#contact" class="px-5 py-2.5 rounded-lg border border-slate-300 hover:border-slate-400 bg-white text-slate-800 text-xs font-semibold tracking-wide transition-all">
+          Contact &rarr;
+        </a>
+      </div>
+
+      <!-- Social Links Row -->
+      <div class="flex items-center justify-center gap-4 pt-4 text-slate-500">
+        <a href="https://linkedin.com/in/regulo-sarmiento-67a57866" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors" title="LinkedIn">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://github.com/ReguloSarmiento" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors" title="GitHub">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:regulo.sarmiento@gmail.com" class="hover:text-emerald-700 transition-colors" title="Email">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-16 space-y-20">
+
+    <!-- ============================================================== -->
+    <!-- ABOUT SECTION (#about)                                         -->
+    <!-- ============================================================== -->
+    <section id="about" class="space-y-8">
+      
+      <!-- Section Heading -->
+      <div class="border-b border-slate-200 pb-4">
+        <span class="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">Introduction</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          About Me
+        </h2>
+      </div>
+
+      <!-- Stacked Profile & Skills -->
+      <div class="space-y-8 text-sm">
+        
+        <!-- Profile -->
+        <div class="space-y-4">
+          <!-- <h3 class="font-bold text-slate-900 text-base">Profile</h3> -->
+          <p class="text-slate-600 leading-relaxed max-w-3xl">
+            Originally from Venezuela, I’ve lived in Ireland for 12 years, and these days I call Wicklow Town home, a small, beautiful coastal town. Away from the keyboard, you’ll find me on long walks, swimming at the beach, or tracking down the best local coffee spots.
+          </p>
+         
+        </div>
+
+        <!-- Core Skills -->
+        <div class="space-y-4">
+          <h3 class="font-bold text-slate-900 text-base">Core Technical Skills</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 text-xs">
+            <div>
+              <span class="font-bold text-slate-900 block mb-1">Core & UI:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Kotlin</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Java</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Jetpack Compose</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Android SDK</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="font-bold text-slate-900 block mb-1">Architecture & Concurrency:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Clean Architecture</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">MVVM / MVI</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Coroutines & Flow</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Hilt / Koin</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="font-bold text-slate-900 block mb-1">Data & Tools:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Room (SQLite)</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Retrofit / OkHttp</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">WorkManager</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Firebase</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Claude Code / Gemini / Antigravity CLI</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="font-bold text-slate-900 block mb-1">Testing & DevOps:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">JUnit / Mockito</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Espresso</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">Fastlane</span>
+                <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono">CircleCI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================== -->
+    <!-- RESUME / EXPERIENCE TIMELINE (#resume)                         -->
+    <!-- ============================================================== -->
+    <section id="resume" class="space-y-8">
+      
+      <div class="border-b border-slate-200 pb-4">
+        <span class="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">Experience</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          Work History
+        </h2>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="timeline-wrap">
+        
+        <!-- Job 1: Zendesk (Explicitly June 2021 to July 2026) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          
+          <div class="space-y-1">
+            <span class="inline-block text-xs font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+              June 2021 – July 2026
+            </span>
+            <h3 class="text-lg font-bold text-slate-900 pt-1">Senior Android Developer</h3>
+            <p class="text-xs font-semibold text-slate-600">
+              <a href="https://www.zendesk.com" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700">Zendesk</a> &bull; Dublin, Ireland
+            </p>
+          </div>
+
+          <div class="mt-3 text-xs sm:text-sm text-slate-600 space-y-2.5">
+            <p class="leading-relaxed">
+              Designed and delivered customer facing Android SDKs used by 500+ enterprise customers worldwide. Split my time across three areas: building new features for the next generation <a href="https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-semibold underline decoration-emerald-300 underline-offset-2">Messaging SDK</a> from implementation through release, maintaining the legacy <a href="https://developer.zendesk.com/documentation/classic-web-widget-sdks/unified-sdk/android/getting_started/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-semibold underline decoration-emerald-300 underline-offset-2">Classic SDK</a> and <a href="https://developer.zendesk.com/documentation/classic-web-widget-sdks/talk-sdk/android/introduction/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-semibold underline decoration-emerald-300 underline-offset-2">Talk SDK</a>, and joined live calls and screen share sessions with customer developers to debug SDK integration issues in real time, unblocking their releases.
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-slate-700">
+              <li>Designed public APIs that were developer friendly and maintained backward compatibility across releases</li>
+              <li>Led refactoring initiatives across legacy SDK modules, improving maintainability and reducing integration friction.</li>
+              <li>Mentored engineers, led code reviews, and championed adoption of Kotlin Coroutines and Flow across the Android team.</li>
+              <li>Partnered with product and QA teams to define acceptance criteria and ensure stability across multiple concurrent SDK versions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2: Flipdish -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          
+          <div class="space-y-1">
+            <span class="inline-block text-xs font-mono font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
+              April 2020 – February 2021
+            </span>
+            <h3 class="text-lg font-bold text-slate-900 pt-1">Android Software Developer</h3>
+            <p class="text-xs font-semibold text-slate-600">
+              <a href="https://www.flipdish.com" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700">Flipdish</a> &bull; Dublin, Ireland
+            </p>
+          </div>
+
+          <div class="mt-3 text-xs sm:text-sm text-slate-600 space-y-2">
+            <p>
+              Maintained and enhanced Flipdish's native white-label Android ordering app used by restaurants and takeaways across Ireland and the UK.
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-slate-700">
+              <li>Implemented customizable UI features and screens aligned with brand guidelines in collaboration with designers.</li>
+              <li>Improved app stability and resolved critical production bugs in ordering and payment checkout flows.</li>
+              <li>Maintained CI/CD pipelines using CircleCI and Fastlane, automating repetitive build and release tasks.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 3: Bamboo App -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          
+          <div class="space-y-1">
+            <span class="inline-block text-xs font-mono font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
+              January 2018 – April 2020
+            </span>
+            <h3 class="text-lg font-bold text-slate-900 pt-1">Android Developer</h3>
+            <p class="text-xs font-semibold text-slate-600">
+              <a href="https://play.google.com/store/apps/details?id=ie.bambooapp.customer&hl=en" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline">Bamboo App (Google Play)</a> &bull; Dublin, Ireland
+            </p>
+          </div>
+
+          <div class="mt-3 text-xs sm:text-sm text-slate-600 space-y-2">
+            <p>
+              Sole Android developer, owned the full development lifecycle of the Bamboo consumer app published on Google Play.
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-slate-700">
+              <li>Architected and shipped a major app rebranding and key feature refactoring using MVVM with zero production downtime.</li>
+              <li>Built and maintained Firebase Firestore and Cloud Functions backend (TypeScript) to support real-time ordering flows.</li>
+              <li>Coordinated and published multiple major app updates directly to the Google Play Store.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 4: Trust5 (Bupa Boost) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          
+          <div class="space-y-1">
+            <span class="inline-block text-xs font-mono font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
+              July 2015 – March 2016
+            </span>
+            <h3 class="text-lg font-bold text-slate-900 pt-1">Android Developer</h3>
+            <p class="text-xs font-semibold text-slate-600">
+              <a href="https://play.google.com/store/apps/details?id=com.bupa.boost" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline">Trust5 &bull; Bupa Boost (Google Play)</a> &bull; Dublin, Ireland
+            </p>
+          </div>
+
+          <div class="mt-3 text-xs sm:text-sm text-slate-600 space-y-2">
+            <p>
+              Worked on an existing native Android app, shipping new features and improving app performance
+            </p>
+            <ul class="list-disc list-inside space-y-1 text-slate-700">
+              <li>Shipped new features and performance improvements for an enterprise-grade health & wellness Android app (Bupa Boost).</li>
+              <li>Built adaptive UI including custom animations, achieving a polished, brand consistent user experience.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================== -->
+    <!-- PORTFOLIO / SHIPPED WORKS (#portfolio)                         -->
+    <!-- ============================================================== -->
+    <section id="portfolio" class="space-y-8">
+      
+      <div class="border-b border-slate-200 pb-4">
+        <span class="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">Portfolio</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
+          Check out some of my works
+        </h2>
+        <p class="text-sm text-slate-600 mt-1">
+          A collection of Android apps, SDKs, and projects I’ve built and shipped.
+        </p>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Project 1: Zendesk SDKs -->
+        <div class="project-card">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-mono text-emerald-800 font-bold uppercase">Enterprise SDK &bull; 500+ Clients</span>
+              <h3 class="text-lg font-bold text-slate-900 mt-1">Zendesk Android SDKs</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-1">
+                Customer-facing Android messaging and support SDKs integrated by enterprise clients worldwide. Built with strict binary compatibility, clean public builders, and offline state persistence.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+              <span class="text-slate-500 font-mono text-[11px]">Kotlin &bull; Coroutines &bull; Clean Arch</span>
+              <a href="https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                <span>SDK Docs &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Bamboo App -->
+        <div class="project-card">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-mono text-emerald-800 font-bold uppercase">Google Play Consumer App</span>
+              <h3 class="text-lg font-bold text-slate-900 mt-1">Bamboo &mdash; Food & Coffee Pre-Order</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-1">
+                Pre-order and pay platform for cafes and eateries. Owned the full native Android app lifecycle, executed a zero-downtime MVVM rewrite, and built the Firebase Firestore back-end.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+              <span class="text-slate-500 font-mono text-[11px]">Kotlin &bull; MVVM &bull; Firestore</span>
+              <a href="https://play.google.com/store/apps/details?id=ie.bambooapp.customer&hl=en" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                <span>Google Play &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Flipdish White-Label App -->
+        <div class="project-card">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-mono text-emerald-800 font-bold uppercase">Scale Platform &bull; Ireland & UK</span>
+              <h3 class="text-lg font-bold text-slate-900 mt-1">Flipdish White-Label Ordering</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-1">
+                Customizable white-label Android food ordering platform used by restaurants and takeaways across Ireland and the UK. Reduced production crashes and automated multi-tenant Fastlane builds.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+              <span class="text-slate-500 font-mono text-[11px]">White-label &bull; Fastlane &bull; CI/CD</span>
+              <a href="https://www.flipdish.com/online-ordering/mobile-apps" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                <span>flipdish.com &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Bupa Boost Corporate Wellness -->
+        <div class="project-card">
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-mono text-emerald-800 font-bold uppercase">Google Play &bull; Enterprise Health</span>
+              <h3 class="text-lg font-bold text-slate-900 mt-1">Bupa Boost Corporate Wellness</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-1">
+                Enterprise health and employee wellness platform shipped for Bupa corporate partners. Built custom animations, adaptive UI, and optimized memory performance.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+              <span class="text-slate-500 font-mono text-[11px]">Java &bull; Android SDK &bull; Custom UI</span>
+              <a href="https://play.google.com/store/apps/details?id=com.bupa.boost" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                <span>Google Play &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================== -->
+    <!-- CONTACT SECTION (#contact)                                     -->
+    <!-- ============================================================== -->
+    <section id="contact" class="space-y-8 border-t border-slate-200 pt-12">
+      
+      <div class="text-center max-w-xl mx-auto space-y-2">
+        <span class="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">Connect</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          Get In Touch
+        </h2>
+        <p class="text-sm text-slate-600">
+          I'm currently open to hybrid roles in Dublin and remote positions across the EU.
+        </p>
+      </div>
+
+      <!-- Contact Info Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-center text-xs">
+        
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 space-y-1">
+          <span class="text-slate-400 font-mono block text-[11px] uppercase">Email</span>
+          <a href="mailto:regulo.sarmiento@gmail.com" class="font-bold text-slate-900 hover:text-emerald-700 break-all">regulo.sarmiento@gmail.com</a>
+          <button data-copy="regulo.sarmiento@gmail.com" class="text-[10px] text-emerald-700 font-semibold block mx-auto mt-1 hover:underline">Copy Email</button>
+        </div>
+
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 space-y-1">
+          <span class="text-slate-400 font-mono block text-[11px] uppercase">Location</span>
+          <span class="font-bold text-slate-900 block">Dublin, Ireland</span>
+          <span class="text-[10px] text-emerald-700 font-medium block">Work Authorized</span>
+        </div>
+
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 space-y-1">
+          <span class="text-slate-400 font-mono block text-[11px] uppercase">Profiles</span>
+          <div class="flex items-center justify-center gap-3 pt-1">
+            <a href="https://linkedin.com/in/regulo-sarmiento-67a57866" target="_blank" rel="noopener noreferrer" class="text-blue-700 font-bold hover:underline">LinkedIn</a>
+            <span class="text-slate-300">&bull;</span>
+            <a href="https://github.com/ReguloSarmiento" target="_blank" rel="noopener noreferrer" class="text-slate-900 font-bold hover:underline">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================== -->
+  <!-- FOOTER                                                         -->
+  <!-- ============================================================== -->
+  <footer class="border-t border-slate-200 py-8 bg-slate-50 text-xs text-slate-500 font-mono text-center">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <strong class="text-slate-800">Regulo Sarmiento</strong> &bull; Senior Android Developer
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#intro" class="hover:text-slate-900 transition-colors">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="copy-toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white border border-slate-700 px-4 py-2.5 rounded-lg shadow-xl text-xs font-mono flex items-center gap-2 opacity-0 translate-y-4 pointer-events-none">
+    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span class="toast-message">Copied to clipboard</span>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
