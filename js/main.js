@@ -4,10 +4,25 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initEmailLinks();
   initCopyActions();
   initMobileMenu();
   initImageLightbox();
 });
+
+/* Assemble the address at runtime to deter basic email scrapers. */
+function initEmailLinks() {
+  const email = `${['regulo', 'sarmiento'].join('.')}@${['gmail', 'com'].join('.')}`;
+
+  document.querySelectorAll('[data-email-link]').forEach(link => {
+    link.href = `mailto:${email}`;
+    if (link.hasAttribute('data-email-text')) link.textContent = email;
+  });
+
+  document.querySelectorAll('[data-copy-email]').forEach(button => {
+    button.dataset.copy = email;
+  });
+}
 
 /* Copy to clipboard with toast notification */
 function initCopyActions() {
