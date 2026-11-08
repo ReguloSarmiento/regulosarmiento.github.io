@@ -253,7 +253,7 @@
           
           <div class="flex items-center gap-3">
             <div class="flex h-14 w-16 shrink-0 items-center justify-center sm:w-20">
-              <img src="./assets/zendesk.jpeg" alt="Zendesk logo" loading="lazy" decoding="async" class="h-14 w-14 object-contain">
+              <img src="./assets/logos/zendesk/zendesk.jpeg" alt="Zendesk logo" loading="lazy" decoding="async" class="h-14 w-14 object-contain">
             </div>
             <div class="space-y-1">
               <span class="inline-block text-sm font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
@@ -285,7 +285,7 @@
           
           <div class="flex items-center gap-3">
             <div class="flex h-12 w-16 shrink-0 items-center justify-center sm:w-20">
-              <img src="./assets/flipdish.png" alt="Flipdish logo" loading="lazy" decoding="async" class="h-8 w-full object-contain object-left">
+              <img src="./assets/logos/flipdish/flipdish.png" alt="Flipdish logo" loading="lazy" decoding="async" class="h-8 w-full object-contain object-left">
             </div>
             <div class="space-y-1">
               <span class="inline-block text-sm font-mono font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
@@ -316,7 +316,7 @@
           
           <div class="flex items-center gap-3">
             <div class="flex h-14 w-16 shrink-0 items-center justify-center sm:w-20">
-              <img src="./assets/bamboo.png" alt="Bamboo App logo" loading="lazy" decoding="async" class="h-14 w-14 object-contain">
+              <img src="./assets/logos/bamboo/bamboo.png" alt="Bamboo App logo" loading="lazy" decoding="async" class="h-14 w-14 object-contain">
             </div>
             <div class="space-y-1">
               <span class="inline-block text-sm font-mono font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
@@ -347,7 +347,7 @@
           
           <div class="flex items-center gap-3">
             <div class="flex h-12 w-16 shrink-0 items-center justify-center sm:w-20">
-              <img src="./assets/trust5.png" alt="Trust5 logo" loading="lazy" decoding="async" class="h-8 w-full object-contain object-left">
+              <img src="./assets/logos/trust5/trust5.png" alt="Trust5 logo" loading="lazy" decoding="async" class="h-8 w-full object-contain object-left">
             </div>
             <div class="space-y-1">
               <span class="inline-block text-sm font-mono font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
@@ -379,7 +379,8 @@
     <!-- ============================================================== -->
     <!-- PORTFOLIO / SHIPPED WORKS (#portfolio)                         -->
     <!-- ============================================================== -->
-    <section id="portfolio" class="space-y-8">
+    <section id="portfolio" class="relative left-1/2 w-screen -translate-x-1/2">
+      <div class="mx-auto w-full max-w-6xl space-y-8 px-4 sm:px-6">
       
       <div class="border-b border-slate-200 pb-4">
         <span class="text-[11px] font-mono font-bold text-emerald-700 uppercase tracking-[0.2em]">Portfolio</span>
@@ -392,84 +393,110 @@
       </div>
 
       <!-- Project Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 gap-6">
         
         <!-- Project 1: Zendesk SDKs -->
         <div class="project-card">
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-          
+          <div class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 lg:items-center">
+            <div class="flex flex-col justify-between gap-6">
+              <div>
               <h3 class="text-lg font-bold text-slate-900 mt-1">Zendesk Android SDKs</h3>
-              <p class="text-sm text-slate-700 leading-relaxed mt-1">
+              <p class="text-base text-slate-700 leading-relaxed mt-1">
                 The Zendesk SDK is a conversational experience designed to provide customer support features within Android applications.
               </p>
+              </div>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+                <span class="text-slate-500 font-mono text-[11px]">Enterprise SDK &bull; 500+ Clients</span>
+                <a href="https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                  <span>View SDK Docs &rarr;</span>
+                </a>
+              </div>
             </div>
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
-              <span class="text-slate-500 font-mono text-[11px]">Enterprise SDK &bull; 500+ Clients</span>
-              <a href="https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
-                <span>View SDK Docs &rarr;</span>
-              </a>
+            <div class="grid grid-cols-3 justify-items-center gap-3">
+              <img src="./assets/screenshots/zendesk/zendesk%20bot.png" alt="Zendesk Android SDK bot conversation screen" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/zendesk/zendesk%20carousel.png" alt="Zendesk Android SDK article carousel screen" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/zendesk/zendesk%20form.png" alt="Zendesk Android SDK support form screen" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
             </div>
           </div>
         </div>
 
         <!-- Project 2: Bamboo App -->
         <div class="project-card">
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-            
+          <div class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 lg:items-center">
+            <div class="flex flex-col justify-between gap-6 lg:order-2">
+              <div>
               <h3 class="text-lg font-bold text-slate-900 mt-1">Bamboo App</h3>
-              <p class="text-sm text-slate-700 leading-relaxed mt-1">
+              <p class="text-base text-slate-700 leading-relaxed mt-1">
                 Allows users to pre-order food and coffee from local restaurants and cafes, providing a convenient way to enjoy their favorite meals on the go.
               </p>
+              </div>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+                <span class="text-slate-500 font-mono text-[11px]">Google Play Consumer App</span>
+                <a href="https://play.google.com/store/apps/details?id=ie.bambooapp.customer&hl=en" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                  <span>Google Play &rarr;</span>
+                </a>
+              </div>
             </div>
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
-              <span class="text-slate-500 font-mono text-[11px]">Google Play Consumer App</span>
-              <a href="https://play.google.com/store/apps/details?id=ie.bambooapp.customer&hl=en" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
-                <span>Google Play &rarr;</span>
-              </a>
+            <div class="grid grid-cols-3 justify-items-center gap-3 lg:order-1">
+              <img src="./assets/screenshots/bamboo/bamboo1.png" alt="Bamboo food ordering app menu" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/bamboo/bamboo2.png" alt="Bamboo app recent orders screen" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/bamboo/bamboo3.png" alt="Bamboo app order details and menu items" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
             </div>
           </div>
         </div>
 
         <!-- Project 3: Flipdish White-Label App -->
         <div class="project-card">
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
-            <div>
+          <div class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 lg:items-center">
+            <div class="flex flex-col justify-between gap-6">
+              <div>
               <h3 class="text-lg font-bold text-slate-900 mt-1">Flipdish White Label App</h3>
-              <p class="text-sm text-slate-700 leading-relaxed mt-1">
+              <p class="text-base text-slate-700 leading-relaxed mt-1">
                 Customisable white-label Android food ordering platform used by restaurants and takeaways across Ireland and the UK. 
               </p>
+              </div>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+                <span class="text-slate-500 font-mono text-[11px]">Scale Platform &bull; Ireland & UK</span>
+                <a href="https://www.flipdish.com/online-ordering/mobile-apps" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                  <span>Flipdish Mobile App &rarr;</span>
+                </a>
+              </div>
             </div>
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
-              <span class="text-slate-500 font-mono text-[11px]">Scale Platform &bull; Ireland & UK</span>
-              <a href="https://www.flipdish.com/online-ordering/mobile-apps" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
-                <span>Flipdish Mobile App &rarr;</span>
-              </a>
+            <div class="grid grid-cols-3 justify-items-center gap-3">
+              <img src="./assets/screenshots/flipdish/flipdish1.png" alt="Flipdish customer ordering menu for Greystones" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/flipdish/flipdish2.png" alt="Flipdish meal details for Crispy Chicken Salad Bowl" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/flipdish/flipdish3.png" alt="Flipdish checkout and order summary screen" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
             </div>
           </div>
         </div>
 
         <!-- Project 4: Bupa Boost Corporate Wellness -->
         <div class="project-card">
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
-            <div>
+          <div class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 lg:items-center">
+            <div class="flex flex-col justify-between gap-6 lg:order-2">
+              <div>
               <h3 class="text-lg font-bold text-slate-900 mt-1">Bupa Boost App</h3>
-              <p class="text-sm text-slate-700 leading-relaxed mt-1">
+              <p class="text-base text-slate-700 leading-relaxed mt-1">
                 Corporate health subscription designed for businesses to provide employees with mental health support, and body-and-mind resources in one place
               </p>
+              </div>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
+                <span class="text-slate-500 font-mono text-[11px]">Health Insurance &bull; Enterprise App</span>
+                <a href="https://www.bupa.co.uk/health/health-insurance" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
+                  <span>Bupa Insurance &rarr;</span>
+                </a>
+              </div>
             </div>
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-medium">
-              <span class="text-slate-500 font-mono text-[11px]">Health Insurance &bull; Enterprise App</span>
-              <a href="https://www.bupa.co.uk/health/health-insurance" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:text-emerald-900 font-bold flex items-center gap-1">
-                <span>Bupa Insurance &rarr;</span>
-              </a>
+            <div class="grid grid-cols-3 justify-items-center gap-3 lg:order-1">
+              <img src="./assets/screenshots/bupa/bupa1.png" alt="Bupa Boost wellness points summary and goals" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/bupa/bupa2.png" alt="Bupa Boost social wellness activity feed" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
+              <img src="./assets/screenshots/bupa/bupa3.png" alt="Bupa Boost corporate challenge leaderboard and step stats" data-lightbox loading="lazy" decoding="async" class="w-full max-w-[180px] rounded-md border border-slate-200 bg-slate-50 object-contain">
             </div>
           </div>
         </div>
 
       </div>
-
+      </div>
     </section>
 
 
